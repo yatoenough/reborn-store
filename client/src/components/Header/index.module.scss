@@ -1,0 +1,65 @@
+.headerWrapped {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+
+  @media only screen and (max-width: 425px) {
+    align-items: center;
+    padding: 0 50px 100px;
+  }
+}
+
+.logo {
+  max-width: 300px;
+  max-height: 200px;
+  margin: 0 auto;
+  @media only screen and (max-width: 425px) {
+    max-width: 100px;
+  }
+}
+
+.logoLink {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.favicon {
+  width: 100%;
+  margin-top: -90px;
+  margin-bottom: 50px;
+  display: flex;
+  font-size: 2rem;
+  gap: 30px;
+}
+
+.line {
+  border-bottom: 1px solid grey;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 425px) {
+  .logo {
+    max-width: 100px;
+    margin: 0;
+  }
+  header {
+    padding: 0 50px 100px;
+  }
+  .headerWrapped {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .favicon {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .fa-header {
+    font-size: 1rem;
+  }
+}
