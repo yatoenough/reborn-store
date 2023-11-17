@@ -6,6 +6,7 @@ import SignUp from './pages/Signup';
 import Main from './components/Main';
 import Footer from './components/Footer';
 import Profile from './pages/Profile';
+import ItemList from './components/ItemList/ItemList';
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
@@ -14,7 +15,7 @@ function App() {
       <Header isLogin={isLogin} />
       <Switch>
         <Route path="/" exact>
-          <Main />
+          <ItemList />
         </Route>
         {isLogin ? (
           <Route path="/profile">
